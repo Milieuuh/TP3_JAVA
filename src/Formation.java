@@ -18,12 +18,24 @@ public class Formation {
     //AUTRES METHODES
     public String toString()
     {
-        String s="";
+        String s= this.codeFormation +" - "+this.nomFormation+"\n";
         for(int i=0; i<this.listeCours.size(); i++)
         {
             s+=listeCours.get(i).toString()+" \n";
         }
         return s;
     }
+
+    public void AjouterCours(Cours c)
+    {
+        this.listeCours.add(c);
+    }
+
+    public void supprimerAIndex(int index)
+    {
+        this.listeCours.remove(index);
+    }
+
+   
 
 }

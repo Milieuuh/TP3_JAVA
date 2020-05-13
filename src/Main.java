@@ -11,5 +11,24 @@ public class Main {
         Cours c6 = new Cours("F101","Français",300);
         Cours c7 = new Cours("F201","Anglais",5);
 
+        //Création d'une formation
+        Formation f1 = new Formation("F0014", "Complète");
+
+        //Ajoute des cours
+        f1.AjouterCours(c1);
+        f1.AjouterCours(c2);
+        f1.AjouterCours(c3);
+        f1.AjouterCours(c4);
+        f1.AjouterCours(c5);
+        f1.AjouterCours(c6);
+        f1.AjouterCours(c7);
+
+        System.out.println(f1);
+
+        //Supprimer le deuxième de la liste
+        f1.supprimerAIndex(1);
+        System.out.println(f1);
+
+
     }
 }
