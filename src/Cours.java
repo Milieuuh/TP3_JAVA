@@ -1,4 +1,4 @@
-public class Cours {
+public class Cours implements Comparable {
 
     private String code;
     private String intitule;
@@ -39,4 +39,12 @@ public class Cours {
     {
         return ""+code+" - "+intitule+" - Volume horaire :"+volumeHoraire+"H";
     }
+
+    public int compareTo(Object obj)
+    {
+        String intitule = ((Cours)obj).getIntitule();
+        
+        return this.intitule.compareTo(intitule);
+    }
+
 }
