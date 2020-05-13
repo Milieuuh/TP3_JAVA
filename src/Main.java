@@ -1,3 +1,5 @@
+import java.util.Collections;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -30,5 +32,8 @@ public class Main {
         System.out.println(f1);
 
 
+        //Trier la liste des cours
+        Collections.sort(f1.getListeCours());
+        System.out.println(f1);
     }
 }

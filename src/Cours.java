@@ -43,7 +43,7 @@ public class Cours implements Comparable {
     public int compareTo(Object obj)
     {
         String intitule = ((Cours)obj).getIntitule();
-        
+
         return this.intitule.compareTo(intitule);
     }
 
