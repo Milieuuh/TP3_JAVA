@@ -32,7 +32,7 @@ public class Main {
         System.out.println(f1);
 
         //Afficher le deuxième élément
-        f1.afficherAIndex(2);
+        System.out.println(f1.afficherAIndex(2));
 
         //Trier la liste des cours
         Collections.sort(f1.getListeCours());

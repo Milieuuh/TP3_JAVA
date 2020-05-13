@@ -36,9 +36,9 @@ public class Formation {
         this.listeCours.remove(index-1);
     }
 
-   public void afficherAIndex(int index)
+   public String afficherAIndex(int index)
    {
-       System.out.println(this.listeCours.get(index-1).toString());
+       return this.listeCours.get(index-1).toString();
    }
 
    //GETTER
