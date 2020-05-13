@@ -33,9 +33,12 @@ public class Formation {
 
     public void supprimerAIndex(int index)
     {
-        this.listeCours.remove(index);
+        this.listeCours.remove(index-1);
     }
 
-   
+   public void afficherAIndex(int index)
+   {
+       System.out.println(this.listeCours.get(index-1).toString());
+   }
 
 }
