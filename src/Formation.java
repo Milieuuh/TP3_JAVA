@@ -21,9 +21,9 @@ public class Formation {
         String s="";
         for(int i=0; i<this.listeCours.size(); i++)
         {
-            s+=listeCours.get(i).toString();
+            s+=listeCours.get(i).toString()+" \n";
         }
-        return s; 
+        return s;
     }
 
 }
