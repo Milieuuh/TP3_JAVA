@@ -41,4 +41,10 @@ public class Formation {
        System.out.println(this.listeCours.get(index-1).toString());
    }
 
+   //GETTER
+
+    public ArrayList<Cours> getListeCours() {
+        return listeCours;
+    }
+
 }
