@@ -15,8 +15,8 @@ public class Etudiant {
     public void ajouterNote(int note) throws ErreurNotes{
        // notes[nbNotes] = note; nbNotes++;
         if ( (nbNotes >= nbMatieres) || ( note < 0 || note > 20) ) throw new
-                ErreurNotes();
-        notes[nbNotes] = note; 
+                ErreurNotes(nbNotes,nbMatieres,note);
+        notes[nbNotes] = note;
         nbNotes++;
 
     }
