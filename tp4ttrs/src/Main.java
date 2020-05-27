@@ -10,7 +10,8 @@ public class Main {
 
         } catch (ErreurNotes e)
         {
-            System.out.println("Gestionnaire d’exceptions demandé...");
+            //System.out.println("Gestionnaire d’exceptions demandé...");
+            e.recuperMessageErreur();
         }
     }
 }
