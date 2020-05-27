@@ -12,8 +12,13 @@ public class Etudiant {
         this.age = age;
         notes = new int[nbMatieres]; nbNotes = 0;
     }
-    public void ajouterNote(int note) {
-        notes[nbNotes] = note; nbNotes++;
+    public void ajouterNote(int note) throws ErreurNotes{
+       // notes[nbNotes] = note; nbNotes++;
+        if ( (nbNotes >= nbMatieres) || ( note < 0 || note > 20) ) throw new
+                ErreurNotes();
+        notes[nbNotes] = note; 
+        nbNotes++;
+
     }
 
     public void afficherNotes(){
